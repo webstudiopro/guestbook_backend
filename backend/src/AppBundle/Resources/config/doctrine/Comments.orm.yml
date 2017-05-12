@@ -1,0 +1,28 @@
+AppBundle\Entity\Comments:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\CommentsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        comment:
+            type: text
+        facebook:
+            type: string
+            length: 255
+        img:
+            type: blob
+        created:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
